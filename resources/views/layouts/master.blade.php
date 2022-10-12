@@ -21,41 +21,10 @@
 
         <!-- Begin page -->
         <div id="layout-wrapper">
-
-            @include('layouts.header')
-
-            @include('layouts.left-sidebar')
-
-            <!-- ============================================================== -->
-            <!-- Start right Content here -->
-            <!-- ============================================================== -->
-            <div class="main-content">
-
-                <div class="page-content">
-                    <div class="container-fluid">
-
-                        <!-- start page title -->
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    @yield('title-page')
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end page title -->
-
-                        <!-- start content -->
-                        @yield('content')
-                        <!-- end content -->
-
-                    </div> <!-- container-fluid -->
+                <div>
+                    @yield('content')
                 </div>
-                <!-- End Page-content -->
-
-                @include('layouts.footer')
-
-            </div>
-            <!-- end main content-->
+            @include('layouts.footer')
         </div>
         <!-- END layout-wrapper -->
 
